@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlBmVM8bYO1thjx7hXeEgeDJ1j7ExZsKG8Sg&usqp=CAU">
+        <meta name="viewport" content="width=divice-width initial-scale=1.0"></meta>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body bgcolor="white">
+    <span id="menu2"class="material-icons">
+menu
+</span>
+<span  onclick="switcher()"id="light-mode"class="material-icons">
+light_mode
+</span>
+  <div id="menu">
+   <a class="ss"href="#">Gmail</a>
+   <a class="sd"href="#">Google Account</a>  
+   <a class="sr"href="#">Youtube</a>
+<a class="st"href="#" >Instagram</a>
+   </div>
+    <center>
+       <h1>Google</h1>
+      <input type="text" id="input" class="input1" placeholder="search or type web adress "> 
+      <p id="indicate"></p>
+        <center>
+        <br />
+        <button onclick="search()"> 
+        Google search
+        </button>
+        <script>
+            alert("---Google---Clone---✌️")
+function search(){
+    var input= document.getElementById("input");
+    if (input.value != ""){
+    var url ="https://www.google.com/search?q="+input.value;
+    window.open(url);
+    }else{
+     var p = document.getElementById ("indicate");
+     p.innerText="Search something....";
+    }
+}
+        </script>
+        <style>
+        #menu{
+            background:none;
+            width:100px;
+            margin:10px;
+            margin-left:10px;
+            padding:10px;
+            border-radius:10px;
+            border:solid white;
+            display:none;
+        }
+        a{
+            display:inline-block;
+            margin:10px;
+            width:100px;
+            text-decoration:none;
+            color:white;
+        }
+        a:hover{
+        font-size:20px;
+        color:green;
+        transition:0.5s ease-in-out;
+        cursor:pointer;
+        }
+        #light-mode{
+            margin-left:300px;
+        }
+        span{
+        margin-left:10px;
+        display:inline-block;
+        width:10px;
+        }
+        span:hover{
+        cursor:pointer;
+        }
+        #indicate{
+            color:red;
+        }
+        h1{
+        color:white;
+        font-weight:20px;
+        font-size:50px;
+        }
+        body{
+        margin:0px auto;
+        background-color:black;
+        color:white;
+        margin-top:10%;
+        }
+button{
+    padding:5px;
+    width:100px;
+    border-radius:10px;
+    border:1px solid white;
+    background:none;
+    font-size:15px;
+    color:white;
+}
+.google{
+    color:black;    
+}
+.google:hover{
+    color:red;
+    cursor:pointer;
+}
+input{
+    padding:10px;
+    width:70%;
+    border-radius:30px;
+    border:1px solid white;
+    font-size:15px;
+    color:white;
+    background:none;
+}
+li{
+    display:inline-block ;
+    font-weight:bold;
+}
+input{
+    outline:none;
+}
+.dark{
+background-color:white; 
+color:black;
+}
+.h1{
+color:black;
+}
+.darkA{   
+   color:black;    
+    border-radius:10px;
+    border:solid black;
+    padding:5px;
+    display:inline-block;
+        }
+.input{
+    padding:10px;
+    width:70%;
+    border-radius:30px;
+    border:1px solid black;
+    font-size:15px;
+    color:black;
+    background:none;
+        }
+.button{
+    padding:5px;
+    width:100px;
+    border-radius:10px;
+    border:1px solid black;
+    background:none;
+    font-size:15px;
+    color:black;
+}
+</style>
+<script>
+    $(function() {
+    $("#menu2").click(function() {
+        $("#menu").slideToggle(200);
+    });
+}); 
+$(function(){
+    $("#menu").click(function(){
+    $("#menu").slideToggle(200);
+     });  
+   })
+   function switcher() { 
+    var element = document.body; 
+    var h1 = document.querySelector("h1"); 
+    var a = document.querySelector(".ss"); 
+    var sd = document.querySelector(".sd"); 
+    var sr = document.querySelector(".sr"); 
+   var st = document.querySelector(".st"); 
+   var input = document.getElementById("input");
+   var btn = document.querySelector("button"); 
+   input.classList.toggle("input");
+   input.style.transition="2s";
+   btn.classList.toggle("button");
+   btn.style.transition="2s";
+    element.classList.toggle("dark");
+    element.style.transition = '2s';
+    h1.classList.toggle("h1");
+    h1.style.transition = '2s';
+    a.classList.toggle("darkA");
+    a.style.transition = '2s';
+    sd.classList.toggle("darkA");
+    sd.style.transition = '2s';
+    sr.classList.toggle("darkA");
+    sr.style.transition = '2s';
+    st.classList.toggle("darkA");
+    st.style.transition = '2s';
+    navigator.vibrate([50]);
+}
+
+</script>
+    </body>
+</html>
