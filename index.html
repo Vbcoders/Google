@@ -30,7 +30,6 @@ https://www.youtube.com">Youtube</a>
         <button onclick="search()"> 
         Google search
         </button>
-       <hr>
      <div class="footer">
         <h3><b>Google</b></h3>
       <p class="p">&copy All rights reserved : Google.</p>
@@ -44,8 +43,7 @@ https://www.youtube.com">Youtube</a>
     var url ="https://www.google.com/search?q="+input.value;
     window.open(url);
     }else{
-     var p = document.getElementById ("indicate");
-     p.innerText="Search something....";
+     navigator.vibrate([50]);
     }
    input.value="";
 }
@@ -97,10 +95,10 @@ https://www.youtube.com">Youtube</a>
         cursor:pointer;
         }
         #light-mode{
-            margin-left:90%;
+            margin-left:70%;
         }
         span{
-        margin-left:5px;
+        margin-left:10px;
         display:inline-block;
         width:10px; 
         }
