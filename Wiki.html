@@ -1,0 +1,91 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wikipedia</title>
+</head>
+<body>
+  <center>
+  <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png" alt="Globe" width="40%">
+  <h1>Wikipedia</h1>
+  <pre>The Free Encyclopedia</pre>
+  <br>
+  <input type="text" id="search" placeholder="wikipedia.org">
+  <button onclick="search();" class="fa fa-search"></button>
+  <footer>
+    <h3><b>Wikipedia</b></h3>
+    <hr>
+    <div>
+      Wikipedia Search engine front page <br>
+      Developed By Vb.coders
+    </div>
+  </footer>
+  </center>
+  <script>
+    var wikiurl='https://en.m.wikipedia.org/wiki/';
+    var val = document.getElementById('search');
+    function search(){
+      if(val.value==''){
+      
+      }else{
+      var url = wikiurl + val.value;
+      window.open(url);
+      val.value='';
+      }
+    }
+  </script>
+  <style>
+  footer{
+    margin-top: 100%;
+    font-weight: 800;
+    font-size: 10px;
+    opacity: 50%;
+  }
+    body{
+     box-sizing: border-box;
+     margin: 30px;
+     padding: 20px;
+     background-color: black;
+     color: white;
+    }
+    img{
+      padding:10px;
+    }
+    h1{
+      margin: 10px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+      font-weight: 800;
+    }
+    img,h1{
+      margin: 0px;
+    }
+    input{
+      width:70%;
+      height: 30px;
+      text-align: center;
+     outline: none;
+    }
+    button{
+      width: 50px;
+      height: 30px;
+      margin: 0px;
+      background-color: royalblue;
+      color: white;
+      border: none;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+    button,input{
+      margin: 0px;
+      padding:0px;
+      display: inline-block;
+    }
+    pre{
+      opacity: 50%;
+      font-weight:200;
+    }
+  </style>
+</body>
+</html>
