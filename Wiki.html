@@ -29,10 +29,31 @@
     function search(){
       if(val.value==''){
       
-      }else{
+}
+else if(val.value.includes('about')){
+        val.value= val.value.replace("about","");
       var url = wikiurl + val.value;
       window.open(url);
       val.value='';
+      }
+     else if(val.value.includes('who'))
+      {
+        val.value= val.value.replace("who","");
+      var url = wikiurl + val.value;
+      window.open(url);
+      val.value='';
+      }
+      else if(val.value.includes('About')){
+        val.value= val.value.replace("About","");
+      var url = wikiurl + val.value;
+      window.open(url);
+      val.value='';
+      }
+   else if (val.value.includes('Who')){
+        val.value = val.value.replace("Who", "");
+        var url = wikiurl + val.value;
+        window.open(url);
+        val.value = '';
       }
     }
   </script>
