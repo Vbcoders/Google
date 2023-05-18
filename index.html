@@ -7,35 +7,34 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+       <script src="https://kit.fontawesome.com/06b45a7278.js" crossorigin="anonymous"></script>
     </head>
     <body bgcolor="white">
-    <span id="menu2"class="material-icons">
-menu
-</span>
-<span  onclick="switcher()"id="light-mode"class="material-icons">
-light_mode
-</span>
-  <div id="menu">
-   <a class="ss"href="https://www.gmail.com">Gmail</a>
-   <a class="sv"href="Wiki.html">Wikipedia</a>
-   <a class="sd"href="https://accounts.google.com/v3/signin/identifier?dsh=S369356709%3A1673030793951732&elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh73FmCL96cQ7v-y7imhdDBo1KBIoLmV1EVrn4UTjR4asb47H4DUEd8rYYFSjuXjoxEP5oxixg">Google Account</a>  
-   <a class="sr"href="
-https://www.youtube.com">Youtube</a>
-<a class="st"href="https://www.instagram.com" >Instagram</a>
-   </div>
 <center>
-       <h1>Google</h1>
-      <input type="text" id="input" class="input1" placeholder="search or type web adress "> 
-      <p id="indicate"></p>
-        <br />
-        <button onclick="search()"> 
-        Google search
-        </button>
-     <div class="footer">
-        <h3><b>Google</b></h3>
-      <p class="p">&copy All rights reserved : Google.</p>
-      <p class="p"> Google clone Developed By Vbcoders</p>
+         <a class="ss"href="https://www.gmail.com"><i class="fa-solid fa-envelope fa-bounce"></i></a>
+         <a class="sv"href="Wiki.html"><i class="fa-brands fa-wikipedia-w fa-bounce"></i></a>
+         <a class="sd"href="https://accounts.google.com/v3/signin/identifier?dsh=S369356709%3A1673030793951732&elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh73FmCL96cQ7v-y7imhdDBo1KBIoLmV1EVrn4UTjR4asb47H4DUEd8rYYFSjuXjoxEP5oxixg"><i class="fa-brands fa-google fa-bounce"></i></a>  
+         <a class="sr"href="
+      https://www.youtube.com"><i class="fa-brands fa-youtube fa-bounce"></i></a>
+      <a class="st"href="https://www.instagram.com" ><i class="fa-brands fa-instagram fa-rotate-90 fa-bounce"></i></a>
          </div>
+         <img src="C:\Users\pc\Downloads\IMG_20230516_021714_111.jpg" alt="">
+        <div id="menu">
+       <h1>Google</h1>
+       <br><br>
+      <input type="text" id="input" class="input1" placeholder="search or type web adress "> 
+      <i id="voice" onclick="voiceSearch()" class="fa-solid fa-microphone"></i>
+        <br /><br>
+        <div id="section">
+            <h2>Vb coders</h2>
+                        <hr>
+            This Google home page developed by Vb.coders <br>
+            Vbcoders is an development personal organization who are creating new ideas and develop of webpages
+            Thank you for using this !
+        </div>
+        <button id='btn' style='display:none'onclick="search()"> 
+        Search
+        </button>
     </center>
         <script>
     function search(){
@@ -48,8 +47,129 @@ https://www.youtube.com">Youtube</a>
     }
    input.value="";
 }
+
+document.getElementById("input").addEventListener(
+  "keyup",
+  (e) => {
+    if (e.key === "Enter") {
+      document.getElementById("btn").click()
+    }
+  });
         </script>
         <style>
+    @media  screen and (max-width:767px) {
+        .checkbox {
+  width: 223px;
+  height: 60px;
+  background-color: #d0d0d0;
+  border-radius: 30px;
+  position: relative;
+  color: black;
+  overflow: hidden;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.checkbox .toggle {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  border-radius: 30px;
+  left: 5px;
+  cursor: pointer;
+  background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px rgb(255, 255, 20), 0px 0px 30px rgb(255, 255, 20);
+}
+
+.checkbox .slide {
+  width: 230px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.checkbox .slide .text {
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.check:checked + .checkbox .slide .toggle {
+  transform: translateX(113px);
+  background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+  box-shadow: -0px -0px 10px #8983F7, -0px -0px 30px #8983F7;
+}
+
+.check:checked + .checkbox .slide {
+  background-color: #0a1929;
+  color: #fff;
+}
+#voice{
+    border: none;
+    color: white;
+    background-color: none;
+    box-shadow: none;
+    margin: 0px;
+    padding: 10px;
+    font-size: 20px;
+}
+#section{
+    opacity: 50%;
+    margin: 30px;
+    color: grey;
+    text-align: left;
+}
+    h2{
+        font-size: 20px;
+        text-align: left;
+        font-weight: 800;
+    }
+.fa-brands{
+       font-size:20px;
+       color: white;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+       font-size: 15px;
+         }
+     .fa-solid{
+        font-size:20px;
+       color: white;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+    #fa-brandsHover{
+       font-size:20px;
+       color: black;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+     #fa-solidHover{
+        font-size:20px;
+       color: black;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+    img{
+        width: 40%;
+        border-radius: 50%;
+        margin: 50px;
+        padding: 0px;
+        box-shadow: 2px 2px 50px blue;
+    }
    .footer{ 
       background-color:grey;
       width:100%;
@@ -57,9 +177,6 @@ https://www.youtube.com">Youtube</a>
       margin:0px auto;
       margin-top:100%;
    }
-   h1{ 
-    margin-top:40%;
-    }
     .p{ 
      font-size:15px;
      width:100%;
@@ -70,17 +187,14 @@ https://www.youtube.com">Youtube</a>
        font-style:Cursive;
      }
         #menu{
-            background:none;
-            width:100px;
-            margin:10px;
+            background: none;
+            width:100%;
+            margin:10px auto;
             margin-left:10px;
             padding:10px;
-            border-radius:10px;
-            border:solid white;
-            display:none;
         }
         a{
-            display:inline-block;
+            display:inline;
             margin:10px;
             width:100px;
             text-decoration:none;
@@ -93,7 +207,7 @@ https://www.youtube.com">Youtube</a>
         cursor:pointer;
         }
         #light-mode{
-            margin-left:80%;
+            margin-left:50%;
         }
         span{
         margin-left:10px;
@@ -110,13 +224,13 @@ https://www.youtube.com">Youtube</a>
         color:white;
         font-weight:20px;
         font-size:50px;
+        margin: 5px auto;
         }
         body{
-        margin:0px auto;
-        background-color:black;
+        box-sizing: border-box;
+        margin:50px;
+        background-color: black;
         color:white;
-        height:100%;
-        margin-top:10px;
         }
 button{
     padding:5px;
@@ -131,17 +245,17 @@ input{
     padding:10px;
     width:70%;
     border-radius:30px;
-    border:1px solid white;
     font-size:15px;
     color:white;
-    background:none;
+    background:black;
+    outline:none;
+    box-shadow: 2px 2px 10px black;
+    border:1px solid grey;
+    border-radius: 30px; 
 }
 li{
     display:inline-block ;
     font-weight:bold;
-}
-input{
-    outline:none;
 }
 .dark{
 background-color:white; 
@@ -152,10 +266,8 @@ color:black;
 }
 .darkA{   
    color:black;    
-    border-radius:10px;
-    border:solid black;
-    padding:5px;
-    display:inline-block;
+   background: none;
+   width: 100%;
         }
 .input{
     padding:10px;
@@ -175,49 +287,41 @@ color:black;
     font-size:15px;
     color:black;
 }
+ }
 </style>
 <script>
-    $(function() {
-    $("#menu2").click(function() {
-        $("#menu").slideToggle(200);
-    });
-}); 
-$(function(){
-    $("#menu").click(function(){
-    $("#menu").slideToggle(200);
-     });  
-   })
-   function switcher() { 
-    var element = document.body; 
-     var sv = document.querySelector(".sv"); 
-    var h1 = document.querySelector("h1"); 
-    var a = document.querySelector(".ss"); 
-    var sd = document.querySelector(".sd"); 
-    var sr = document.querySelector(".sr"); 
-   var st = document.querySelector(".st"); 
-   var input = document.getElementById("input");
-   var btn = document.querySelector("button"); 
-   input.classList.toggle("input");
-   input.style.transition="2s";
-   btn.classList.toggle("button");
-   btn.style.transition="2s";
-    element.classList.toggle("dark");
-    element.style.transition = '2s';
-    h1.classList.toggle("h1");
-    h1.style.transition = '2s';
-    a.classList.toggle("darkA");
-    a.style.transition = '2s';
-    sd.classList.toggle("darkA");
-    sd.style.transition = '2s';
-    sr.classList.toggle("darkA");
-    sr.style.transition = '2s';
-    st.classList.toggle("darkA");
-    st.style.transition = '2s';
-    sv.classList.toggle("darkA");
-    sv.style.transition = '2s';
-    navigator.vibrate([50]);
-}
-
+    window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+    let finalTranscript = ''; 
+    let recognition = new
+ window.SpeechRecognition();   
+ recognition.interimResults = true;
+  recognition.maxAlternatives = 10;
+   recognition.continuous = true;
+    recognition.onresult = (event) => { 
+   let interimTranscript = ''; 
+   for (let i = event.resultIndex, len =event.results.length; i < len; i++)  { 
+   let transcript = event.results[i][0].transcript; 
+   if (event.results[i].isFinal)  { 
+   finalTranscript += transcript;
+   document.getElementById("input").value = transcript; 
+   console.log(transcript); 
+            }
+         }
+     }
+ function voiceSearch(){
+    var mic =document.getElementById('voice');
+    recognition.start();
+    mic.classList.remove('fa-microphone');
+        mic.classList.add('fa-microphone-slash');
+        mic.style.transition='5s ease-in-out';
+    document.getElementById("input").focus(); 
+    recognition.addEventListener('end',()=>{
+        mic.classList.remove('fa-microphone-slash');
+        mic.classList.add('fa-microphone');
+        mic.style.transition='10s ease-in-out';
+        document.getElementById("btn").click()
+    })
+ }
 </script>
     </body>
 </html>
