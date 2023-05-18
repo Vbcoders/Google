@@ -121,7 +121,7 @@ document.getElementById("input").addEventListener(
 }
 #section{
     opacity: 50%;
-    margin: 30px;
+
     color: grey;
     text-align: left;
 }
@@ -228,7 +228,7 @@ document.getElementById("input").addEventListener(
         }
         body{
         box-sizing: border-box;
-        margin:50px;
+        margin:20px;
         background-color: black;
         color:white;
         }
@@ -298,7 +298,7 @@ color:black;
   recognition.maxAlternatives = 10;
    recognition.continuous = true;
     recognition.onresult = (event) => { 
-   let interimTranscript = ''; 
+   let interimTranscript = '';
    for (let i = event.resultIndex, len =event.results.length; i < len; i++)  { 
    let transcript = event.results[i][0].transcript; 
    if (event.results[i].isFinal)  { 
