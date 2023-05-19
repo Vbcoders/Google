@@ -9,7 +9,7 @@
        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
        <script src="https://kit.fontawesome.com/06b45a7278.js" crossorigin="anonymous"></script>
     </head>
-    <body bgcolor="white">
+    <body>
 <center>
          <a class="ss"href="https://www.gmail.com"><i class="fa-solid fa-envelope fa-bounce"></i></a>
          <a class="sv"href="Wiki.html"><i class="fa-brands fa-wikipedia-w fa-bounce"></i></a>
@@ -18,7 +18,8 @@
       https://www.youtube.com"><i class="fa-brands fa-youtube fa-bounce"></i></a>
       <a class="st"href="https://www.instagram.com" ><i class="fa-brands fa-instagram fa-rotate-90 fa-bounce"></i></a>
          </div>
-         <img src="IMG_20230516_021714_111.jpg" alt="">
+         <br>
+         <img src="C:\Users\pc\Downloads\IMG_20230516_021714_111.jpg" alt="">
         <div id="menu">
        <h1>Google</h1>
        <br><br>
@@ -59,58 +60,6 @@ document.getElementById("input").addEventListener(
         </script>
         <style>
     @media  screen and (max-width:767px) {
-        .checkbox {
-  width: 223px;
-  height: 60px;
-  background-color: #d0d0d0;
-  border-radius: 30px;
-  position: relative;
-  color: black;
-  overflow: hidden;
-}
-
-#checkbox_toggle {
-  display: none;
-}
-
-.checkbox .toggle {
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  border-radius: 30px;
-  left: 5px;
-  cursor: pointer;
-  background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
-  transition: 0.4s;
-  box-shadow: 0px 0px 10px rgb(255, 255, 20), 0px 0px 30px rgb(255, 255, 20);
-}
-
-.checkbox .slide {
-  width: 230px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-}
-
-.checkbox .slide .text {
-  font-size: 16px;
-  font-weight: 700;
-  z-index: 100;
-  cursor: pointer;
-}
-
-.check:checked + .checkbox .slide .toggle {
-  transform: translateX(113px);
-  background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
-  box-shadow: -0px -0px 10px #8983F7, -0px -0px 30px #8983F7;
-}
-
-.check:checked + .checkbox .slide {
-  background-color: #0a1929;
-  color: #fff;
-}
 #voice{
     border: none;
     color: white;
@@ -122,8 +71,7 @@ document.getElementById("input").addEventListener(
 }
 #section{
     opacity: 50%;
-
-    color: grey;
+    color: white;
     text-align: left;
 }
     h2{
@@ -226,14 +174,17 @@ document.getElementById("input").addEventListener(
         font-weight:20px;
         font-size:50px;
         margin: 0px;
-            width:100%;
+        width:100%;
         text-align:center;
         }
         body{
         box-sizing: border-box;
         margin:50px;
-        background-color: black;
-        color:white;
+        background-image: url("https://marketplace.canva.com/EAE-xnqWvJk/1/0/1600w/canva-retro-smoke-and-round-light-desktop-wallpapers-JLofAI27pCg.jpg");
+        background-repeat: no-repeat;
+        background-position: absolute;
+        background-size: cover;
+        backdrop-filter: blur(5px);
         }
 button{
     padding:5px;
@@ -253,7 +204,372 @@ input{
     background:black;
     outline:none;
     box-shadow: 2px 2px 10px black;
-    border:1px solid grey;
+    border:none;
+    border-radius: 30px; 
+}
+li{
+    display:inline-block ;
+    font-weight:bold;
+}
+.dark{
+background-color:white; 
+color:black;
+}
+.h1{
+color:black;
+}
+.darkA{   
+   color:black;    
+   background: none;
+   width: 100%;
+        }
+.input{
+    padding:10px;
+    width:70%;
+    border-radius:30px;
+    border:1px solid black;
+    font-size:15px;
+    color:black;
+    background:none;
+        }
+.button{
+    padding:5px;
+    width:100px;
+    border-radius:10px;
+    border:1px solid black;
+    background:none;
+    font-size:15px;
+    color:black;
+}
+ }
+ @media  screen and (min-width:992px) {
+  #voice{
+    border: none;
+    color: white;
+    background-color: none;
+    box-shadow: none;
+    margin: 0px;
+    padding: 10px;
+    font-size: 20px;
+}
+#section{
+    opacity: 80%;
+    color: white;
+    text-align: left;
+}
+    h2{
+        font-size: 30px;
+        text-align: left;
+        font-weight: 800;
+    }
+.fa-brands{
+       font-size:20px;
+       color: white;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+
+         }
+.fa-brands:hover{
+       font-size:20px;
+       color: white;
+       border: none;
+       box-shadow: 2px 2px 30px darkblue;
+       border-radius: 50%;
+       background-color: blue;
+       padding: 20px;
+         }
+     .fa-solid{
+       font-size:20px;
+       color: white;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+         .fa-solid:hover{
+          border: none;
+          background-color: blue;
+          color: white;
+          box-shadow: 2px 2px 30px darkblue;
+         }
+    #fa-brandsHover{
+       font-size:20px;
+       color: black;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+     #fa-solidHover{
+        font-size:20px;
+       color: black;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+    img{
+        width: 20%;
+        border-radius: 50%;
+        margin: 50px;
+        padding: 0px;
+        box-shadow: 2px 2px 50px blue;
+    }
+    .p{ 
+     font-size:15px;
+     width:100%;
+     }
+      h3{
+       width:100%;
+       font-weight:20px;
+       font-style:Cursive;
+     }
+        #menu{
+            background: none;
+            width:80%;
+            margin:0px;
+            margin-left:10px;
+            padding:10px;
+        }
+        a{
+            display:inline;
+            margin:10px;
+            width:100%;
+            text-decoration:none;
+            color:white;
+        }
+        span{
+        margin-left:10px;
+        display:inline-block;
+        width:10px; 
+        }
+        span:hover{
+        cursor:pointer;
+        }
+        h1{
+        color:white;
+        font-weight:20px;
+        font-size:80px;
+        margin: 0px;
+        width:100%;
+        text-align:center;
+        }
+        body{
+        box-sizing: border-box;
+        margin: 30px;
+        background-image: url("https://marketplace.canva.com/EAE-xnqWvJk/1/0/1600w/canva-retro-smoke-and-round-light-desktop-wallpapers-JLofAI27pCg.jpg");
+        background-repeat: no-repeat;
+        background-position: absolute;
+        background-size: cover;
+        backdrop-filter: blur(5px);
+        
+        }
+button{
+    padding:5px;
+    width:100px;
+    border-radius:10px;
+    border:1px solid white;
+    background:none;
+    font-size:15px;
+    color:white;
+}
+input{
+    padding:10px;
+    width:70%;
+    border-radius:30px;
+    font-size:15px;
+    color:white;
+    font-style: bold;
+    font-weight: 800;
+    background:black;
+    outline:none;
+    border:none;
+    border-radius: 30px; 
+
+}
+li{
+    display:inline-block ;
+    font-weight:bold;
+}
+.dark{
+background-color:white; 
+color:black;
+}
+.h1{
+color:black;
+}
+.darkA{   
+   color:black;    
+   background: none;
+   width: 100%;
+        }
+.input{
+    padding:10px;
+    width:70%;
+    border-radius:30px;
+    border:1px solid black;
+    font-size:15px;
+    color:black;
+    background:none;
+        }
+.button{
+    padding:5px;
+    width:100px;
+    border-radius:10px;
+    border:1px solid black;
+    background:none;
+    font-size:15px;
+    color:black;
+}
+ }
+ @media  screen and (min-width:768px) and (max-width:991) {
+    #voice{
+    border: none;
+    color: white;
+    background-color: none;
+    box-shadow: none;
+    margin: 0px;
+    padding: 10px;
+    font-size: 20px;
+}
+#section{
+    opacity: 50%;
+    color: white;
+    text-align: left;
+}
+    h2{
+        font-size: 20px;
+        text-align: left;
+        font-weight: 800;
+    }
+.fa-brands{
+       font-size:20px;
+       color: white;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+
+         }
+     .fa-solid{
+        font-size:20px;
+       color: white;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+    #fa-brandsHover{
+       font-size:20px;
+       color: black;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+     #fa-solidHover{
+        font-size:20px;
+       color: black;
+       border: 1px solid blue;
+       box-shadow: 2px 2px 30px blue;
+       border-radius: 50%;
+       padding: 20px;
+         }
+    img{
+        width: 40%;
+        border-radius: 50%;
+        margin: 50px;
+        padding: 0px;
+        box-shadow: 2px 2px 50px blue;
+    }
+   .footer{ 
+      background-color:grey;
+      width:100%;
+      padding:5px;
+      margin:0px auto;
+      margin-top:100%;
+   }
+    .p{ 
+     font-size:15px;
+     width:100%;
+     }
+      h3{
+       width:100%;
+       font-weight:20px;
+       font-style:Cursive;
+     }
+        #menu{
+            background: none;
+            width:100%;
+            margin:0px;
+            margin-left:10px;
+            padding:10px;
+        }
+        a{
+            display:inline;
+            margin:10px;
+            width:100%;
+            text-decoration:none;
+            color:white;
+        }
+        a:hover{
+        font-size:20px;
+        color:green;
+        transition:0.5s ease-in-out;
+        cursor:pointer;
+        }
+        #light-mode{
+            margin-left:50%;
+        }
+        span{
+        margin-left:10px;
+        display:inline-block;
+        width:10px; 
+        }
+        span:hover{
+        cursor:pointer;
+        }
+        #indicate{
+            color:red;
+        }
+        h1{
+        color:white;
+        font-weight:20px;
+        font-size:50px;
+        margin: 0px;
+        width:100%;
+        text-align:center;
+        }
+        body{
+        box-sizing: border-box;
+        margin:50px;
+        background-image: url("https://marketplace.canva.com/EAE-xnqWvJk/1/0/1600w/canva-retro-smoke-and-round-light-desktop-wallpapers-JLofAI27pCg.jpg");
+        background-repeat: no-repeat;
+        background-position: absolute;
+        background-size: cover;
+        backdrop-filter: blur(5px);
+        }
+button{
+    padding:5px;
+    width:100px;
+    border-radius:10px;
+    border:1px solid white;
+    background:none;
+    font-size:15px;
+    color:white;
+}
+input{
+    padding:10px;
+    width:70%;
+    border-radius:30px;
+    font-size:15px;
+    color:white;
+    background:black;
+    outline:none;
+    box-shadow: 2px 2px 10px black;
+    border:none;
     border-radius: 30px; 
 }
 li{
